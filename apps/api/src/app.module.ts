@@ -3,6 +3,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
+import { Asset } from './assets/asset.entity';
+import { Tag } from './tags/tag.entity';
 
 @Module({
   imports: [
@@ -15,6 +17,7 @@ import { AuthModule } from './auth/auth.module';
       database: 'app',
       autoLoadEntities: true,
       synchronize: true,
+      entities: [Asset, Tag],
     }),
     AuthModule,
   ],
