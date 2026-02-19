@@ -89,4 +89,4 @@
 
 ---
 
-**DeenCraft — craft content with purpose.**
+**DeenKraft — craft content with purpose.**
